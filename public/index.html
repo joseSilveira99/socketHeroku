@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Chat</title>
+    <script src="jquery.js"></script>
+    <script src="socketio.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <form id="chat">
+      <div class="messages">
+
+			
+      </div>
+      <input type="hidden" name="message">
+      <button id="gravar" type="submit">Iniciar Gravação</button>
+    </form>
+
+    <script type="text/javascript">
+    
+      $('#chat').submit(function(event){//Quando clicar em enviar este método entra em ação
+        event.preventDefault();
+        console.log('teste');
+
+      });
+    </script>
+  </body>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</html>
